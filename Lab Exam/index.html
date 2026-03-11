@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Event Registration</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<h2>Global Tech Connect Event Registration</h2>
+
+<form>
+
+<table>
+
+<tr>
+<td>Full Name</td>
+
+<td>
+<input type="text" id="name">
+</td>
+
+<td>
+<p id="nameErr" style="color:red"></p>
+</td>
+</tr>
+
+
+<tr>
+<td>Professional Email</td>
+
+<td>
+<input type="text" id="email">
+</td>
+
+<td>
+<p id="emailErr" style="color:red"></p>
+</td>
+</tr>
+
+
+<tr>
+<td>Company / Institution</td>
+
+<td>
+<input type="text" id="company">
+</td>
+</tr>
+
+
+<tr>
+<td>Attendance Type</td>
+
+<td>
+<input type="radio" name="type" value="Virtual"> Virtual
+<input type="radio" name="type" value="InPerson"> In-Person
+</td>
+
+<td>
+<p id="typeErr" style="color:red"></p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<button onclick="return collectData();">
+Register
+</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+
+<br>
+
+<button id="btn" onclick="toggleAnalytics()">Show Event Analytics</button>
+
+
+<div id="analytics" style="display:none">
+
+<p>Total Registrants: <span id="total">0</span></p>
+<p>Virtual: <span id="virtual">0</span></p>
+<p>In-Person: <span id="inperson">0</span></p>
+
+</div>
+
+</body>
+</html>
