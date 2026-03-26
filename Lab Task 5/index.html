@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Text Analysis Tool</title>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>Text Analysis Tool</h1>
+
+    <textarea
+      id="inputText"
+      placeholder="Paste your paragraph here..."
+      rows="8"
+      cols="50"
+    ></textarea>
+
+    <br /><br />
+
+    <button onclick="analyzeText()">Analyze Text</button>
+
+    <p id="errorMsg" style="color: red;"></p>
+
+    <div id="result" style="margin-top: 20px; display: none;">
+      <p><strong>Total Characters:</strong> <span id="charCount"></span></p>
+      <p><strong>Total Words:</strong> <span id="wordCount"></span></p>
+      <p><strong>Reversed Text:</strong></p>
+      <p id="reversedText"></p>
+    </div>
+
+  </body>
+</html>
